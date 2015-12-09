@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFE99F5E1C1814F1000CBF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE99F5D1C1814F1000CBF9F /* AppDelegate.swift */; };
+		FFE99F601C1814F1000CBF9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE99F5F1C1814F1000CBF9F /* ViewController.swift */; };
+		FFE99F631C1814F1000CBF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE99F611C1814F1000CBF9F /* Main.storyboard */; };
+		FFE99F661C1814F1000CBF9F /* FunPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE99F641C1814F1000CBF9F /* FunPoint.xcdatamodeld */; };
+		FFE99F681C1814F1000CBF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE99F671C1814F1000CBF9F /* Assets.xcassets */; };
+		FFE99F6B1C1814F1000CBF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE99F691C1814F1000CBF9F /* LaunchScreen.storyboard */; };
+		FFE99F761C1814F1000CBF9F /* FunPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE99F751C1814F1000CBF9F /* FunPointTests.swift */; };
+		FFE99F811C1814F1000CBF9F /* FunPointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE99F801C1814F1000CBF9F /* FunPointUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFE99F721C1814F1000CBF9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFE99F521C1814F1000CBF9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE99F591C1814F1000CBF9F;
+			remoteInfo = FunPoint;
+		};
+		FFE99F7D1C1814F1000CBF9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFE99F521C1814F1000CBF9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE99F591C1814F1000CBF9F;
+			remoteInfo = FunPoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFE99F5A1C1814F1000CBF9F /* FunPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE99F5D1C1814F1000CBF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFE99F5F1C1814F1000CBF9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFE99F621C1814F1000CBF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFE99F651C1814F1000CBF9F /* FunPoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FunPoint.xcdatamodel; sourceTree = "<group>"; };
+		FFE99F671C1814F1000CBF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE99F6A1C1814F1000CBF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFE99F6C1C1814F1000CBF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE99F711C1814F1000CBF9F /* FunPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE99F751C1814F1000CBF9F /* FunPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunPointTests.swift; sourceTree = "<group>"; };
+		FFE99F771C1814F1000CBF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE99F7C1C1814F1000CBF9F /* FunPointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunPointUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE99F801C1814F1000CBF9F /* FunPointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunPointUITests.swift; sourceTree = "<group>"; };
+		FFE99F821C1814F1000CBF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFE99F571C1814F1000CBF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F6E1C1814F1000CBF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F791C1814F1000CBF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFE99F511C1814F1000CBF9F = {
+			isa = PBXGroup;
+			children = (
+				FFE99F5C1C1814F1000CBF9F /* FunPoint */,
+				FFE99F741C1814F1000CBF9F /* FunPointTests */,
+				FFE99F7F1C1814F1000CBF9F /* FunPointUITests */,
+				FFE99F5B1C1814F1000CBF9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFE99F5B1C1814F1000CBF9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFE99F5A1C1814F1000CBF9F /* FunPoint.app */,
+				FFE99F711C1814F1000CBF9F /* FunPointTests.xctest */,
+				FFE99F7C1C1814F1000CBF9F /* FunPointUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFE99F5C1C1814F1000CBF9F /* FunPoint */ = {
+			isa = PBXGroup;
+			children = (
+				FFE99F5D1C1814F1000CBF9F /* AppDelegate.swift */,
+				FFE99F5F1C1814F1000CBF9F /* ViewController.swift */,
+				FFE99F611C1814F1000CBF9F /* Main.storyboard */,
+				FFE99F671C1814F1000CBF9F /* Assets.xcassets */,
+				FFE99F691C1814F1000CBF9F /* LaunchScreen.storyboard */,
+				FFE99F6C1C1814F1000CBF9F /* Info.plist */,
+				FFE99F641C1814F1000CBF9F /* FunPoint.xcdatamodeld */,
+			);
+			path = FunPoint;
+			sourceTree = "<group>";
+		};
+		FFE99F741C1814F1000CBF9F /* FunPointTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFE99F751C1814F1000CBF9F /* FunPointTests.swift */,
+				FFE99F771C1814F1000CBF9F /* Info.plist */,
+			);
+			path = FunPointTests;
+			sourceTree = "<group>";
+		};
+		FFE99F7F1C1814F1000CBF9F /* FunPointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFE99F801C1814F1000CBF9F /* FunPointUITests.swift */,
+				FFE99F821C1814F1000CBF9F /* Info.plist */,
+			);
+			path = FunPointUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFE99F591C1814F1000CBF9F /* FunPoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE99F851C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPoint" */;
+			buildPhases = (
+				FFE99F561C1814F1000CBF9F /* Sources */,
+				FFE99F571C1814F1000CBF9F /* Frameworks */,
+				FFE99F581C1814F1000CBF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunPoint;
+			productName = FunPoint;
+			productReference = FFE99F5A1C1814F1000CBF9F /* FunPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFE99F701C1814F1000CBF9F /* FunPointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE99F881C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPointTests" */;
+			buildPhases = (
+				FFE99F6D1C1814F1000CBF9F /* Sources */,
+				FFE99F6E1C1814F1000CBF9F /* Frameworks */,
+				FFE99F6F1C1814F1000CBF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFE99F731C1814F1000CBF9F /* PBXTargetDependency */,
+			);
+			name = FunPointTests;
+			productName = FunPointTests;
+			productReference = FFE99F711C1814F1000CBF9F /* FunPointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFE99F7B1C1814F1000CBF9F /* FunPointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE99F8B1C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPointUITests" */;
+			buildPhases = (
+				FFE99F781C1814F1000CBF9F /* Sources */,
+				FFE99F791C1814F1000CBF9F /* Frameworks */,
+				FFE99F7A1C1814F1000CBF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFE99F7E1C1814F1000CBF9F /* PBXTargetDependency */,
+			);
+			name = FunPointUITests;
+			productName = FunPointUITests;
+			productReference = FFE99F7C1C1814F1000CBF9F /* FunPointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFE99F521C1814F1000CBF9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = com.fcuh.funpoint;
+				TargetAttributes = {
+					FFE99F591C1814F1000CBF9F = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = ZAX874UM9G;
+					};
+					FFE99F701C1814F1000CBF9F = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = ZAX874UM9G;
+						TestTargetID = FFE99F591C1814F1000CBF9F;
+					};
+					FFE99F7B1C1814F1000CBF9F = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = ZAX874UM9G;
+						TestTargetID = FFE99F591C1814F1000CBF9F;
+					};
+				};
+			};
+			buildConfigurationList = FFE99F551C1814F1000CBF9F /* Build configuration list for PBXProject "FunPoint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFE99F511C1814F1000CBF9F;
+			productRefGroup = FFE99F5B1C1814F1000CBF9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE99F591C1814F1000CBF9F /* FunPoint */,
+				FFE99F701C1814F1000CBF9F /* FunPointTests */,
+				FFE99F7B1C1814F1000CBF9F /* FunPointUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFE99F581C1814F1000CBF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE99F6B1C1814F1000CBF9F /* LaunchScreen.storyboard in Resources */,
+				FFE99F681C1814F1000CBF9F /* Assets.xcassets in Resources */,
+				FFE99F631C1814F1000CBF9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F6F1C1814F1000CBF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F7A1C1814F1000CBF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFE99F561C1814F1000CBF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE99F601C1814F1000CBF9F /* ViewController.swift in Sources */,
+				FFE99F661C1814F1000CBF9F /* FunPoint.xcdatamodeld in Sources */,
+				FFE99F5E1C1814F1000CBF9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F6D1C1814F1000CBF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE99F761C1814F1000CBF9F /* FunPointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE99F781C1814F1000CBF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE99F811C1814F1000CBF9F /* FunPointUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFE99F731C1814F1000CBF9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFE99F591C1814F1000CBF9F /* FunPoint */;
+			targetProxy = FFE99F721C1814F1000CBF9F /* PBXContainerItemProxy */;
+		};
+		FFE99F7E1C1814F1000CBF9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFE99F591C1814F1000CBF9F /* FunPoint */;
+			targetProxy = FFE99F7D1C1814F1000CBF9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFE99F611C1814F1000CBF9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE99F621C1814F1000CBF9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFE99F691C1814F1000CBF9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE99F6A1C1814F1000CBF9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFE99F831C1814F1000CBF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFE99F841C1814F1000CBF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE99F861C1814F1000CBF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FunPoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFE99F871C1814F1000CBF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FunPoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFE99F891C1814F1000CBF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FunPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunPoint.app/FunPoint";
+			};
+			name = Debug;
+		};
+		FFE99F8A1C1814F1000CBF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FunPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunPoint.app/FunPoint";
+			};
+			name = Release;
+		};
+		FFE99F8C1C1814F1000CBF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FunPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FunPoint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FFE99F8D1C1814F1000CBF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FunPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcuh.funpoint.FunPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FunPoint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFE99F551C1814F1000CBF9F /* Build configuration list for PBXProject "FunPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE99F831C1814F1000CBF9F /* Debug */,
+				FFE99F841C1814F1000CBF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE99F851C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE99F861C1814F1000CBF9F /* Debug */,
+				FFE99F871C1814F1000CBF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFE99F881C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE99F891C1814F1000CBF9F /* Debug */,
+				FFE99F8A1C1814F1000CBF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFE99F8B1C1814F1000CBF9F /* Build configuration list for PBXNativeTarget "FunPointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE99F8C1C1814F1000CBF9F /* Debug */,
+				FFE99F8D1C1814F1000CBF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFE99F641C1814F1000CBF9F /* FunPoint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFE99F651C1814F1000CBF9F /* FunPoint.xcdatamodel */,
+			);
+			currentVersion = FFE99F651C1814F1000CBF9F /* FunPoint.xcdatamodel */;
+			path = FunPoint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFE99F521C1814F1000CBF9F /* Project object */;
+}
