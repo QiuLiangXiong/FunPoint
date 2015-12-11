@@ -1,0 +1,18 @@
+//
+//  CALayer+QLXExt.h
+//  fcuhConsumer
+//
+//  Created by 邱良雄 on 15/8/14.
+//  Copyright (c) 2015年 avatar. All rights reserved.
+//
+
+#import <QuartzCore/QuartzCore.h>
+#import "QLXSpringAnimation.h"
+#import "QLXKeyframeAnimation.h"
+#import "QLXBasicAnimation.h"
+@interface CALayer(QLXExt)
+
+-(void) addSpringAnimation:(KeyPathType) type  WithBlock:(void(^)(QLXSpringAnimation * animation))block;
+-(void) addKeyframeAnimation:(KeyPathType) type  WithBlock:(void(^)(QLXKeyframeAnimation * animation)) block;
+-(void) addBasicAnimation:(KeyPathType) type  WithBlock:(void(^)(QLXBasicAnimation * animation)) block;
+@end

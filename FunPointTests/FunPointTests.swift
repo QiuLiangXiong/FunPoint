@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import FunPoint
 
 class FunPointTests: XCTestCase {
     
