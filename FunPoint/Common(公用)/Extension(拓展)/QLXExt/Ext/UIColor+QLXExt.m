@@ -51,5 +51,8 @@
     return [self colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
 
++ (instancetype) colorWithR:(CGFloat) red g:(CGFloat) green b:(CGFloat)blue{
+    return [[UIColor alloc] initWithRed:red / 255.0 green:green / 255.0  blue: blue / 255.0 alpha:1];
+}
 
 @end

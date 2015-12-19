@@ -39,6 +39,7 @@
 
 #pragma 便利的构造方法
 + (void)executeInMainQueue:(dispatch_block_t)block;
++ (void)executeOnce:(dispatch_block_t)block;
 + (void)executeInGlobalQueue:(dispatch_block_t)block;
 + (void)executeInHighPriorityGlobalQueue:(dispatch_block_t)block;
 + (void)executeInLowPriorityGlobalQueue:(dispatch_block_t)block;

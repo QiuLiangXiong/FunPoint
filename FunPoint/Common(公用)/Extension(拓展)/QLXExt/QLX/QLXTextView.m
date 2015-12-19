@@ -15,7 +15,7 @@
 @property (nonatomic, assign,getter=isFirst) BOOL first;
 @property (nonatomic, strong) UITextField * cacheTextField; // 当做文本的去除换行
 @property (nonatomic, strong) UITapGestureRecognizer * tapGR;
-@property (nonatomic, strong) UILabel * limitLengthInfoLbl;
+
 @property (nonatomic, copy) NSString * lastText;   // 修改之前的文本
 @end
 @implementation QLXTextView
@@ -59,7 +59,7 @@
     self.unNumEnable = true;
     self.newLineEnable = true;
     self.returnEnable = true;
-    self.shakeEnable = true;
+    self.shakeEnable = false;
     self.offset = 0;
     [self.textView constraintWithEdgeZero];
     
@@ -162,7 +162,7 @@
         }else {
             self.lastText = textView.text;
         }
-
+        
         
         if (self.limitTextLength != 0) {
             if (textView.text.length > self.limitTextLength) {
@@ -222,6 +222,9 @@
     NSInteger inputNum =self.limitTextLength - self.remainLimitLengh;
     self.limitLengthInfoLbl.text = [NSString stringWithFormat:@"(%ld/%ld)",(long)inputNum,(long)self.limitTextLength ];
     //self.limitLengthInfoLbl.hidden = self.remainLimitLengh == self.limitTextLength;
+    if ([self.delegate respondsToSelector:@selector(textView:showInfoInLbl:limitRemainInfoViewWillChangeWithInputNum:)]) {
+        [self.delegate textView:self showInfoInLbl:self.limitLengthInfoLbl limitRemainInfoViewWillChangeWithInputNum:inputNum];
+    }
 }
 
 -(void) keyboardWillShow:(CGFloat) height{
@@ -383,7 +386,7 @@
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
-
+    
     if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
         return [self.delegate textView:textView shouldChangeTextInRange:range replacementText:text];
     }

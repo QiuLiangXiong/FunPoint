@@ -47,6 +47,13 @@ static GCDQueue *backgroundPriorityGlobalQueue;
     return backgroundPriorityGlobalQueue;
 }
 
++ (void)executeOnce:(dispatch_block_t)block{
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+}
+
 + (void)initialize
 {
     /**

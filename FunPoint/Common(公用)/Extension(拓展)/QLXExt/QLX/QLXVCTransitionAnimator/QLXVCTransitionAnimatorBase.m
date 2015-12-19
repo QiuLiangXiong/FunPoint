@@ -11,7 +11,7 @@
 @interface QLXVCTransitionAnimatorBase()
 
 @property (nonatomic, strong) UIScreenEdgePanGestureRecognizer * popGestrureRecognizer;
-@property (nonatomic, weak) QLXVCTransitionAnimatorBase * interactiveTransition;
+
 
 
 @end
@@ -124,21 +124,13 @@
     CGFloat progress = [self getInteractiveProgressWithGesture:gesture];
     progress = fmin(1.0 , fmax(0.0,progress)); // 这样可以保证 progress 在 [0 , 1]
     if (gesture.state == UIGestureRecognizerStateBegan) {
-        self.interactiveTransition = self;
-        if (self.transitionType & QLXVCTransitonTypePush) {
-            if ([self.destinationController isKindOfClass:[UINavigationController class]]) {
-                UINavigationController * naVC = (UINavigationController *)self.destinationController;
-                [naVC popViewControllerAnimated:true];
-            }
-        }else {
-            [self.destinationController dismissViewControllerAnimated:true completion:nil];// 待测试 个人猜想
-        }
+        [self interactiveBeginWithProgress:progress];
     }else if(gesture.state == UIGestureRecognizerStateChanged){
         // 更新 interactivePopTransition 进度
-        [self.interactiveTransition updateInteractiveTransition:progress];
+        [self interactiveChangeWithProgress:progress];
     }else if(gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateCancelled){
         // 完成或者取消过渡
-        if (progress > 0.25) {
+        if ([self finishInteractiveTransitionWithProgress:progress]) {
             [self.interactiveTransition finishInteractiveTransition];
         }else {
             [self.interactiveTransition cancelInteractiveTransition];
@@ -148,9 +140,31 @@
     
 }
 
+-(BOOL) finishInteractiveTransitionWithProgress:(CGFloat)progress{
+    return progress > 0.25;
+}
+
 - (CGFloat) getInteractiveProgressWithGesture:(UIScreenEdgePanGestureRecognizer *)gesture{
     return [gesture translationInView:self.destinationController.view].x / self.destinationController.view.bounds.size.width;
 }
+
+-(void)  interactiveBeginWithProgress:(CGFloat)progress{
+    self.interactiveTransition = self;
+    if (self.transitionType & QLXVCTransitonTypePush) {
+        if ([self.destinationController isKindOfClass:[UINavigationController class]]) {
+            UINavigationController * naVC = (UINavigationController *)self.destinationController;
+            [naVC popViewControllerAnimated:true];
+        }
+    }else if(self.transitionType & QLXVCTransitonTypeInteractionDismiss){
+        [self.destinationController dismissViewControllerAnimated:true completion:nil];//
+    }
+}
+
+-(void)  interactiveChangeWithProgress:(CGFloat)progress{
+    
+    [self.interactiveTransition updateInteractiveTransition:progress];
+}
+
 
 
 

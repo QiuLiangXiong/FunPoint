@@ -30,6 +30,29 @@
 -(NSString *) className;
 
 /**
+ *  获得对象类型
+ */
+-(Class) getClass;
+
+/**
+ *  根据类名创造对象
+ *
+ *  @param aClass
+ *
+ *  @return
+ */
++(id) createWithClass:(Class) aClass;
+
+/**
+ *  将一个对象的类型自动转换为本质类型
+ *
+ *  @return Self 类型对象
+ */
+-(instancetype) toSelf;
+
++(instancetype) toSelfWithObject:(id)obj;
+
+/**
  *  归档 单例数据
  */
 -(void) saveData;

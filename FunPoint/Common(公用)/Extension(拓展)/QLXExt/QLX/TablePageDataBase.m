@@ -11,6 +11,7 @@
 @implementation TablePageDataBase
 
 -(NSString *)reuseIdentifier{
+    
     return @"QLXTableViewPage";
 }
 

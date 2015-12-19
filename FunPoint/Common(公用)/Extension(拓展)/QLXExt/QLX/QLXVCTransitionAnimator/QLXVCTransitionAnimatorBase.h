@@ -34,6 +34,7 @@ typedef NS_ENUM(NSUInteger, QLXVCTransitonType) {
 @property (nonatomic, weak  ) UIViewController   * fromViewController;
 @property (nonatomic, weak  ) UIViewController   * toViewController;
 @property (nonatomic, weak  ) UIView             * containerView;
+@property (nonatomic, weak) QLXVCTransitionAnimatorBase * interactiveTransition;
 @property (nonatomic, assign) BOOL isDimiss;
 @property (nonatomic, assign) BOOL isPop;
 
@@ -43,18 +44,60 @@ typedef NS_ENUM(NSUInteger, QLXVCTransitonType) {
 - (void) initConfigs;
 
 /**
- *  返回pop手势进度
+ *  返回pop手势进度 可以重写
  *
  *  @param gesture
  *
  *  @return [0 , 1] 区间 代表进度
  */
 - (CGFloat) getInteractiveProgressWithGesture:(UIScreenEdgePanGestureRecognizer *)gesture;
+
+/**
+ *  重写来返回这个过渡动画的时间
+ *
+ *  @param transitionContext
+ *
+ *  @return 总时间 duration
+ */
+
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext;
+
 /**
  *  过度动画基类方法 重写时记得父类方法
  *
  *  @param transitionContext 
  */
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext;
+
+/**
+ *  判断是否完成手势过渡 可重写 来决定手势过渡是否成功
+ *
+ *  @param progress
+ *
+ *  @return
+ */
+-(BOOL) finishInteractiveTransitionWithProgress:(CGFloat)progress;
+
+/**
+ *  处理手势
+ *
+ *  @param gesture
+ */
+
+-(void) handlePopGesture:(UIScreenEdgePanGestureRecognizer *) gesture;
+
+/**
+ *  手势刚开始  你可以重写做一些操作
+ *
+ *  @param progress 进度 [0 , 1] 区间
+ */
+-(void)  interactiveBeginWithProgress:(CGFloat)progress;
+
+/**
+ *  手势滑动中  你可以重写做一些操作
+ *
+ *  @param progress 进度 [0 , 1] 区间
+ */
+-(void)  interactiveChangeWithProgress:(CGFloat)progress;
 
 @end

@@ -58,7 +58,10 @@
 #import "QLXButton.h"
 #import "QLXAnimationGroup.h"
 #import "QLXSlider.h"
+#import "QLXTabBarController.h"
 #import "QLXAdPageView.h"
+#import "QLXTarbarVCTransitionPaddingAnimator.h"
+#import "QLXPanGestureRecognizer.h"
 
 #import "UIImageView+QLXExt.h"
 #import "UIColor+QLXExt.h"
@@ -76,6 +79,8 @@
 #import "NSDate+QLXExt.h"
 #import "NSDictonary+QLXExt.h"
 #import "UINavigationController+QLXExt.h"
+#import "UITabBarItem+QLXExt.h"
+
 
 //ref
 #import "QLXHttpModel.h"

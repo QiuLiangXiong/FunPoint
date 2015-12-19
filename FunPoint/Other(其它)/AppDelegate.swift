@@ -10,17 +10,18 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        self.window = RootWindow.getInstance()  // 主窗口就一个  
+        JPEngine.startEngine()
         
-        
-        
+    
+        self.window = ApplicationManager.getInstance().rootWindow
+
         return true
     }
 

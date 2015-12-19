@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UITextView * textView;
 @property (nonatomic, strong) UILabel * placeholderLbl;
 @property (nonatomic, copy) NSString * placeholder;
+@property (nonatomic, strong) UILabel * limitLengthInfoLbl;
 @property (nonatomic, weak) UIView * targetView; // 键盘抬起 移动的视图
 @property (nonatomic, weak) UIView * tapView; // 点击收起 视图
 @property (nonatomic, assign) NSInteger limitTextLength; // 字数限制
@@ -49,5 +50,8 @@
 @end
 
 @protocol QLXTextViewDelegate <UITextViewDelegate>
+
+// 显示 剩余 字数 的 将要变化信息的代理
+-(void) textView:(QLXTextView *)textView showInfoInLbl:(UILabel *)label limitRemainInfoViewWillChangeWithInputNum:(NSInteger) num ;
 
 @end

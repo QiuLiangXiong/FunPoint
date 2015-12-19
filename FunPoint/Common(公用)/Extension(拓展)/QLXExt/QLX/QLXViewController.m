@@ -9,6 +9,9 @@
 #import "QLXViewController.h"
 #import "QLXExt.h"
 @interface QLXViewController ()
+
+@property(nonatomic , strong)  UITabBarItem * __tarbarItem;
+
 @end
 
 @implementation QLXViewController
@@ -51,7 +54,22 @@
 }
 
 
+// 通过重写这个方法来设置这个属性
+-(UITabBarItem *) getTabBarItem{
+    return nil;
+}
 
+-(UITabBarItem *)tabBarItem{
+    if (___tarbarItem == nil) {
+        ___tarbarItem = [self getTabBarItem];
+        if (___tarbarItem) {
+            [super setTabBarItem:___tarbarItem];
+        }else {
+            return [super tabBarItem];
+        }
+    }
+    return [super tabBarItem];
+}
 
 
 

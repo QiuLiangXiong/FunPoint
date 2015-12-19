@@ -23,7 +23,7 @@
 
 -(void)viewDidAppear_Ext:(BOOL)animated{
     [self viewDidAppear_Ext:animated];
-    NSLog(@"%@",[self className]);
+   // NSLog(@"%@",[self className]);
 }
 
 -(void) presentViewControllerWithClass:(Class) aClass animated:(BOOL) animated completion:(void (^)(void))completion{

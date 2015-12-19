@@ -18,10 +18,10 @@ singleInstanceDefine
  *
  *  @param url
  *  @param params
- *  @param success <#success description#>
- *  @param failure <#failure description#>
+ *  @param success
+ *  @param failure
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (AFHTTPRequestOperation *)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure;
 

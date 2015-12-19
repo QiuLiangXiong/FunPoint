@@ -29,6 +29,23 @@
     return [NSString stringWithUTF8String:object_getClassName(self)];
 }
 
+-(Class) getClass{
+    return self.class;
+}
+
++(id) createWithClass:(Class) aClass{
+    return [[aClass alloc] init];
+}
+
+-(instancetype) toSelf{
+    return self;
+}
+
++(instancetype) toSelfWithObject:(id)obj{
+    return obj;
+}
+
+
 -(void) saveData{
     [GCDQueue executeInGlobalQueue:^{
         NSMutableData *data = [[NSMutableData alloc]init];

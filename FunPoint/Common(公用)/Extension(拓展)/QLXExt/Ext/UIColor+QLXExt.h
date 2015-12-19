@@ -10,4 +10,14 @@
 
 @interface UIColor(QLXExt)
 + (instancetype) colorWithHexString: (NSString *)color;
+/**
+ *  0~255 范围的rgb
+ *
+ *  @param red   [0 ,255]
+ *  @param green
+ *  @param blue
+ *
+ *  @return 
+ */
++ (instancetype) colorWithR:(CGFloat) red g:(CGFloat) green b:(CGFloat)blue;
 @end
